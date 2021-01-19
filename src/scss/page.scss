@@ -6,6 +6,11 @@ button {
   border-radius: 100px;
   background-color: black;
   color: white;
+  font-family: 'Gilroy',sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18.36px;
+  line-height: 130%;
 }
 
 
@@ -58,10 +63,11 @@ button {
   }
 
   .adress {
+    width: 370px;
     display: flex;
     align-items: center;
     svg {
-      margin-right: 10px;
+      margin-right: 19px;
     }
   }
 
@@ -78,5 +84,130 @@ button {
     svg {
       margin-right: 6px;
     }
+  }
+}
+
+
+.intro {
+
+  background-image: url("../img/bg-intro.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+
+
+  .row,.col-xl-9 {
+    padding: 0;
+  }
+
+
+
+  .intro-block {
+    height: 330px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    //background-color: red;
+
+    h1 {
+      font-size: 85px;
+      line-height: 130%;
+    }
+  }
+  .block-text {
+    padding-top: 111px;
+
+  }
+}
+
+
+.about {
+  padding-bottom:150px;
+
+  .row {
+    padding: 0;
+  }
+
+  .images {
+    position: relative;
+    padding-right: 60px;
+    img {
+      //height: 456px;
+    }
+    .dots {
+      position: absolute;
+      right: 346px;
+      top: 56px;
+
+    }
+  }
+  .about-flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .about-text {
+    display: flex;
+    align-items: center;
+
+    div {
+
+    }
+    h3 {
+      font-size: 51px;
+      line-height: 130%;
+    }
+    p {
+      padding-top: 60px;
+    }
+  }
+}
+
+
+.contact-us {
+  form {
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    button {
+      width: 100% !important;
+    }
+    input {
+        border-radius: 100px;
+      border: 1px solid #2F3A3C;
+      height: 50px;
+
+    }
+  }
+}
+
+
+
+
+
+
+footer {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .col-xxl {
+    margin-bottom: 0;
+  }
+
+  padding: 30px 0;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.66), rgba(255, 255, 255, 0.66)), linear-gradient(106.71deg, rgba(215, 107, 255, 0.6) 0%, rgba(1, 141, 202, 0.6) 100%);
+
+  .col-xxl {
+    padding: 0;
+  }
+
+  .link {
+    display: flex;
+    justify-content: flex-end;
   }
 }

@@ -10813,6 +10813,11 @@ button {
   border-radius: 100px;
   background-color: black;
   color: white;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18.36px;
+  line-height: 130%;
 }
 
 .header {
@@ -10832,6 +10837,10 @@ button {
   justify-content: flex-end !important;
   display: flex;
 }
+.header .logo-container {
+  display: flex;
+  justify-content: flex-start !important;
+}
 .header .logo {
   display: flex;
   align-items: center;
@@ -10846,11 +10855,12 @@ button {
   margin-right: 15px;
 }
 .header .adress {
+  width: 370px;
   display: flex;
   align-items: center;
 }
 .header .adress svg {
-  margin-right: 10px;
+  margin-right: 19px;
 }
 .header-info-top {
   display: flex;
@@ -10865,4 +10875,27 @@ button {
 }
 .header-info-bottom svg {
   margin-right: 6px;
+}
+
+.intro {
+  background-image: url(../img/bg-intro.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.intro .row, .intro .col-xl-9 {
+  padding: 0;
+}
+.intro .intro-block {
+  height: 330px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.intro .intro-block h1, .intro .intro-block .h1 {
+  font-size: 85px;
+  line-height: 130%;
+}
+.intro .block-text {
+  padding-top: 111px;
 }
