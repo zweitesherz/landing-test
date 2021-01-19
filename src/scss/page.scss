@@ -1,5 +1,82 @@
-.test {
+button {
+  outline: none;
+  width: 255px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
   background-color: black;
-  height: 300px;
-  width: 100%;
+  color: white;
+}
+
+
+
+
+
+.header {
+  padding: 32px 0 28px 0;
+
+  .container {
+    padding: 0;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  .col-xxl {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    justify-content: flex-end !important;
+    display: flex;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: flex-start !important;
+
+  }
+
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    h2 {
+      font-style: normal;
+      font-weight: 800;
+      font-size: 29.376px;
+      line-height: 130%;
+    }
+
+    svg {
+      margin-right: 15px;
+    }
+
+  }
+
+  .adress {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &-info-top {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 6px;
+    }
+  }
+  &-info-bottom {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 6px;
+    }
+  }
 }

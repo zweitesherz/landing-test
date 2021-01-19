@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  outline: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+input,
+textarea {
+  width: 100%;
+}
