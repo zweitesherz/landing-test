@@ -21,6 +21,12 @@ $(document).ready(function () {
             nextEl: '.next',
             prevEl: '.prev',
         },
+        breakpoints: {
+            '1200': {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            }
+        }
 
     });
 })
