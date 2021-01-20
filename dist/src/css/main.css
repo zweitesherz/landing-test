@@ -10992,6 +10992,16 @@ body {
   overflow-x: hidden;
 }
 
+.dots-wr {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+
+.dots {
+  margin-right: 123px;
+}
+
 button {
   outline: none;
   width: 255px;
@@ -11253,6 +11263,9 @@ input::placeholder {
   .contact-us {
     padding-bottom: 80px;
   }
+  .contact-us .dots-wr {
+    display: none;
+  }
   .contact-us .round-title {
     align-self: baseline;
   }
@@ -11341,7 +11354,8 @@ input::placeholder {
 }
 
 .contact-us {
-  padding-bottom: 150px;
+  padding-bottom: 30px;
+  position: relative;
 }
 .contact-us-info {
   padding-left: 129.56px;
