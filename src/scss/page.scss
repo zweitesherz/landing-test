@@ -13,6 +13,53 @@ button {
   line-height: 130%;
 }
 
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.round-title {
+  position: relative;
+  svg {
+    position: absolute;
+    top: -7px;
+    left: -20px;
+  }
+}
+
+.header-info-top {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 6px;
+  }
+}
+
+.adress {
+  width: 370px;
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 19px;
+  }
+}
+
+.header-info-bottom {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 6px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  button {
+    font-size: 16px !important;
+    width: 223.91px !important;
+  }
+
+}
+
 
 
 
@@ -62,29 +109,6 @@ button {
 
   }
 
-  .adress {
-    width: 370px;
-    display: flex;
-    align-items: center;
-    svg {
-      margin-right: 19px;
-    }
-  }
-
-  &-info-top {
-    display: flex;
-    align-items: center;
-    svg {
-      margin-right: 6px;
-    }
-  }
-  &-info-bottom {
-    display: flex;
-    align-items: center;
-    svg {
-      margin-right: 6px;
-    }
-  }
 }
 
 
@@ -123,8 +147,65 @@ button {
 }
 
 
+
+
+.next, .prev {
+  cursor: pointer;
+}
+
+
+
+.slider {
+  position: relative;
+  padding: 150px 0;
+
+  .arrows {
+    display: flex;
+    width: 188px;
+    justify-content: space-between;
+  }
+
+  .slider-title {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+
+  //.slider-item-img {
+  //  width: 160px;
+  //  height: 226px;
+  //}
+
+  .swiper-slide {
+    width: 160px !important;
+    height: 226px;
+
+  }
+
+  .swiper-container {
+    position: absolute;
+    top: 276px;
+    right: 0;
+    width: 800px !important;
+    height: 226px;
+  }
+
+
+  &-info {
+    h4 {
+      margin-top: 60px;
+    }
+
+    p {
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  }
+
+}
 .about {
-  padding-bottom:150px;
+  padding-bottom: 202px;
 
   .row {
     padding: 0;
@@ -154,10 +235,7 @@ button {
     div {
 
     }
-    h3 {
-      font-size: 51px;
-      line-height: 130%;
-    }
+
     p {
       padding-top: 60px;
     }
@@ -165,9 +243,39 @@ button {
 }
 
 
+
+
+
 .contact-us {
+
+  padding-bottom: 150px;
+
+  &-info {
+    padding-left: 129.56px;
+
+    padding-top: 130px;
+
+  }
+
+  .form-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  h3 {
+    padding-bottom: 60px ;
+  }
+
+  .round-title {
+    padding-bottom: 30px;
+    padding-right: 30px;
+  }
+
+
   form {
     height: 290px;
+    width: 540.23px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -175,11 +283,25 @@ button {
       width: 100% !important;
     }
     input {
+
         border-radius: 100px;
       border: 1px solid #2F3A3C;
       height: 50px;
+    }
+
+  }
+
+  .info {
+    .header-info-top {
+      margin-bottom: 30px;
+    }
+    .header-info-bottom {
+      margin-bottom: 32px;
+    }
+    .adress {
 
     }
+
   }
 }
 
