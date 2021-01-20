@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>test</title>
 </head>
     <body>
@@ -64,7 +64,7 @@
                         </div>
 
                         <div class="col-xxl col-lg button three">
-                            <button>Связаться с нами</button>
+                            <button >Связаться с нами</button>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <div class="col-xl-9 offset-xl-2 block-text">
                         <div class="intro-block">
                             <h1 >Обеспыливание <br> бетонных полов</h1>
-                            <button>Связаться с нами</button>
+                            <button class="yellow">Связаться с нами</button>
                         </div>
                     </div>
                 </div>
@@ -141,36 +141,61 @@
                     <div class="col-xxl-5 col-lg slider-info">
                         <h4>От 600 руб./м^2</h4>
                         <p>Наша компания предоставляет услугу мытья полов от бетонной крошки. </p>
-                        <button>Заказать услугу</button>
+                        <button class="btn-desc yellow">Заказать услугу</button>
                     </div>
                 <div class="swiper-container">
+
+                    <div class="next-mobile">
+                        <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d)">
+                                <circle r="25" transform="matrix(-1 0 0 1 35.9062 29.6688)" fill="#FFD76B"/>
+                            </g>
+                            <rect width="5" height="27" transform="matrix(-0.707107 -0.707107 -0.707107 0.707107 47.9062 29.6688)" fill="#2F3A3C"/>
+                            <rect width="5" height="27" transform="matrix(-0.707107 0.707107 0.707107 0.707107 28.8145 10.577)" fill="#2F3A3C"/>
+                            <defs>
+                                <filter id="filter0_d" x="0.90625" y="0.668823" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                    <feOffset dy="6"/>
+                                    <feGaussianBlur stdDeviation="5"/>
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.843137 0 0 0 0 0.419608 0 0 0 0.5 0"/>
+                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                                </filter>
+                            </defs>
+                        </svg>
+                    </div>
+
+
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img class="slider-item-img"  src="./img/slider-img1.jpg" alt="img">
                         </div>
                         <div class="swiper-slide">
-                            <img class="slider-item-img"  src="./img/slider-img1.jpg" alt="img">
+                            <img class="slider-item-img"  src="./img/i2.png" alt="img">
                         </div>
                         <div>
-                            <img class="slider-item-img"  src="./img/slider-img1.jpg" alt="img">
+                            <img class="slider-item-img"  src="./img/i3.png" alt="img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slider-item-img"  src="./img/i4.png" alt="img">
                         </div>
                         <div class="swiper-slide">
                             <img class="slider-item-img"  src="./img/slider-img1.jpg" alt="img">
                         </div>
                         <div class="swiper-slide">
-                            <img class="slider-item-img"  src="./img/slider-img1.jpg" alt="img">
+                            <img class="slider-item-img"  src="./img/i2.png" alt="img">
                         </div>
                         <div class="swiper-slide">
-                            <img class="slider-item-img"  src="./img/slider-img1.jpg" alt="img">
-                        </div>
-                        <div class="swiper-slide">
-                            <img class="slider-item-img"  src="./img/slider-img1.jpg" alt="img">
+                            <img class="slider-item-img"  src="./img/i3.png" alt="img">
                         </div>
                         <div class="swiper-slide">
                             <img class="slider-item-img"  src="./img/slider-img1.jpg" alt="img">
                         </div>
                     </div>
                 </div>
+
+                <button class="btn-mob yellow">Заказать услугу</button>
             </div>
         </section>
         <section class="about">
@@ -242,13 +267,13 @@
                         </div>
                         <form>
                             <label>
-                                <input name="name" type="text"  maxlength="30"/>
+                                <input name="name" type="text" placeholder="Ваше имя" maxlength="30"/>
                             </label>
                             <label>
-                                <input name="name" type="text"/>
+                                <input name="name" type="text" placeholder="Ваш номер телефона"/>
                             </label>
                             <label>
-                                <input name="name" type="email" />
+                                <input name="name" type="email" placeholder="Ваш e-mail" />
                             </label>
                             <button type="submit">Отправить</button>
                         </form>
@@ -257,8 +282,9 @@
                         <div class="round-title">
                             <h4>Написать или позвонить</h4>
                             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="25.0001" cy="25" r="25" fill="#D76BFF" fill-opacity="0.32"/>
+                                <circle cx="25" cy="25" r="25" fill="#018DCA" fill-opacity="0.32"/>
                             </svg>
+
 
                         </div>
                         <div class="info">
@@ -295,8 +321,34 @@
 
                             </div>
                         </div>
-
                     </div>
+                    <div class="container dots-wr">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <svg class="dots" width="170" height="74" viewBox="0 0 170 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="165" cy="5" r="5" transform="rotate(90 165 5)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="5" cy="5" r="5" transform="rotate(90 5 5)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="133" cy="5" r="5" transform="rotate(90 133 5)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="101" cy="5" r="5" transform="rotate(90 101 5)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="69" cy="5" r="5" transform="rotate(90 69 5)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="37" cy="5" r="5" transform="rotate(90 37 5)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="165" cy="37" r="5" transform="rotate(90 165 37)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="5" cy="37" r="5" transform="rotate(90 5 37)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="133" cy="37" r="5" transform="rotate(90 133 37)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="101" cy="37" r="5" transform="rotate(90 101 37)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="69" cy="37" r="5" transform="rotate(90 69 37)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="37" cy="37" r="5" transform="rotate(90 37 37)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="165" cy="69" r="5" transform="rotate(90 165 69)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="5" cy="69" r="5" transform="rotate(90 5 69)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="133" cy="69" r="5" transform="rotate(90 133 69)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="101" cy="69" r="5" transform="rotate(90 101 69)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="69" cy="69" r="5" transform="rotate(90 69 69)" fill="#D76BFF" fill-opacity="0.32"/>
+                                    <circle cx="37" cy="69" r="5" transform="rotate(90 37 69)" fill="#D76BFF" fill-opacity="0.32"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>

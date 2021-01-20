@@ -1,3 +1,17 @@
+
+body {
+  overflow-x: hidden;
+}
+
+.dots-wr {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 50px;
+}
+.dots {
+  margin-right: 123px;
+}
+
 button {
   outline: none;
   width: 255px;
@@ -11,6 +25,41 @@ button {
   font-weight: 800;
   font-size: 18.36px;
   line-height: 130%;
+  cursor: pointer;
+}
+
+button:active {
+  outline: none !important;
+  border: none;
+}
+button:focus {outline:0;}
+
+.yellow {
+  background-color: #FFD76B !important;
+  color: black;
+  box-shadow: 0 6px 6px  rgba(255, 215, 107, 40%);
+}
+
+input::placeholder {
+  padding-left: 20px ;
+  font-family: 'Gilroy',sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18.36px;
+  line-height: 130%;
+
+
+  color: #BFBFBF;
+}
+
+
+.btn-mob {
+  display: none;
+}
+
+.next-mobile {
+  display: none;
+
 }
 
 .wrapper {
@@ -105,6 +154,7 @@ button {
 
     svg {
       margin-right: 15px;
+      cursor: pointer;
     }
 
   }
@@ -146,8 +196,32 @@ button {
   }
 
 }
+
+@media (max-width: 1400px) {
+  .slider {
+    .swiper-container {
+      width: 607px !important;
+    }
+
+    .slider-info {
+      p{
+        max-width: 445px !important;
+      }
+    }
+  }
+
+}
+
+
 @media (max-width: 1200px) {
+
+  p {
+    font-size: 16px;
+  }
+
   .header {
+
+    padding: 15px 0 !important;
     .logo {
       h2{
         display: none !important;
@@ -165,6 +239,51 @@ button {
   }
 
   .slider {
+
+
+    padding-bottom: 80px !important;
+    padding-top: 60px !important;
+
+    .slider-info {
+      p{
+        margin-bottom: 10px;
+      }
+    }
+
+    .next-mobile {
+      position: absolute;
+      right: 5px;
+      top: 35%;
+      transform: translate(-50%, -50%);
+
+      display: block;
+      z-index: 222;
+
+    }
+
+    .swiper-container {
+      position: relative;
+    }
+
+    .swiper-slide {
+      width: 131px !important;
+      height: 150px !important;
+    }
+
+    .slider-item-img {
+      width: 131px !important;
+      height: 150px !important;
+    }
+
+    .btn-desc {
+      display: none;
+    }
+
+    .btn-mob {
+      display: block;
+      margin-top: 10px;
+    }
+
     .wrapper {
       max-width: 90%;
       display: flex;
@@ -187,6 +306,9 @@ button {
   }
 
   .about {
+
+    padding-bottom: 80px !important;
+
     .about-flex {
       display: flex;
       flex-direction: column-reverse;
@@ -198,6 +320,25 @@ button {
 
   .contact-us {
 
+    padding-bottom: 80px;
+
+    .dots-wr {
+      display: none;
+    }
+
+
+
+
+
+    .round-title {
+      align-self: baseline;
+    }
+
+
+    .adress {
+      width: 100% !important;
+    }
+
     form {
       width: 100% !important;
     }
@@ -206,8 +347,12 @@ button {
       align-items: center !important;
     }
     .contact-us-info {
-      padding-left: 0;
+      padding-left: 20px;
+      padding-top: 80px
 
+    }
+    .round-title {
+      padding-right: 0 !important;
     }
   }
 
@@ -320,7 +465,8 @@ button {
 
 .contact-us {
 
-  padding-bottom: 150px;
+  padding-bottom: 30px;
+  position: relative;
 
   &-info {
     padding-left: 129.56px;

@@ -11,8 +11,7 @@ $(document).ready(function () {
         direction: 'horizontal',
         slidesPerView: 4,
         spaceBetween: 30,
-        loop: true,
-        centeredSlides: true,
+        // loop: true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true
@@ -22,9 +21,11 @@ $(document).ready(function () {
             prevEl: '.prev',
         },
         breakpoints: {
-            '1200': {
+            1200: {
                 slidesPerView: 2,
-                spaceBetween: 15,
+                navigation: {
+                    nextEl: '.next-mobile'
+                },
             }
         }
 

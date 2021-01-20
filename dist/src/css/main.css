@@ -10907,9 +10907,17 @@ img {
     font-size: 32px !important;
   }
 
+  h4, .h4 {
+    font-size: 24px !important;
+  }
+
   .row {
     padding-left: 21.38px !important;
     padding-right: 21.38px !important;
+  }
+
+  .header-info-top, .header-info-bottom {
+    margin-bottom: 15px !important;
   }
 }
 * {
@@ -10980,6 +10988,10 @@ textarea {
   font-weight: 800;
   font-style: normal;
 }
+body {
+  overflow-x: hidden;
+}
+
 button {
   outline: none;
   width: 255px;
@@ -10993,6 +11005,60 @@ button {
   font-weight: 800;
   font-size: 18.36px;
   line-height: 130%;
+  cursor: pointer;
+}
+
+button:active {
+  outline: none !important;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.yellow {
+  background-color: #FFD76B !important;
+  color: black;
+  box-shadow: 0 6px 6px rgba(255, 215, 107, 0.4);
+}
+
+input::-moz-placeholder {
+  padding-left: 20px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18.36px;
+  line-height: 130%;
+  color: #BFBFBF;
+}
+
+input:-ms-input-placeholder {
+  padding-left: 20px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18.36px;
+  line-height: 130%;
+  color: #BFBFBF;
+}
+
+input::placeholder {
+  padding-left: 20px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18.36px;
+  line-height: 130%;
+  color: #BFBFBF;
+}
+
+.btn-mob {
+  display: none;
+}
+
+.next-mobile {
+  display: none;
 }
 
 .wrapper {
@@ -11073,6 +11139,7 @@ button {
 }
 .header .logo svg {
   margin-right: 15px;
+  cursor: pointer;
 }
 
 .intro {
@@ -11098,9 +11165,134 @@ button {
   padding-top: 111px;
 }
 
+@media (max-width: 1400px) {
+  .slider .swiper-container {
+    width: 607px !important;
+  }
+  .slider .slider-info p {
+    max-width: 445px !important;
+  }
+}
+@media (max-width: 1200px) {
+  p {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 15px 0 !important;
+  }
+  .header .logo h2, .header .logo .h2 {
+    display: none !important;
+  }
+  .header .one, .header .two, .header .three {
+    display: none;
+  }
+
+  .intro .intro-block {
+    height: 164px;
+  }
+
+  .slider {
+    padding-bottom: 80px !important;
+    padding-top: 60px !important;
+  }
+  .slider .slider-info p {
+    margin-bottom: 10px;
+  }
+  .slider .next-mobile {
+    position: absolute;
+    right: 5px;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 222;
+  }
+  .slider .swiper-container {
+    position: relative;
+  }
+  .slider .swiper-slide {
+    width: 131px !important;
+    height: 150px !important;
+  }
+  .slider .slider-item-img {
+    width: 131px !important;
+    height: 150px !important;
+  }
+  .slider .btn-desc {
+    display: none;
+  }
+  .slider .btn-mob {
+    display: block;
+    margin-top: 10px;
+  }
+  .slider .wrapper {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .slider .wrapper .swiper-container {
+    position: relative;
+    width: 100% !important;
+    top: 40px;
+  }
+  .slider .wrapper .arrows {
+    display: none;
+  }
+
+  .about {
+    padding-bottom: 80px !important;
+  }
+  .about .about-flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about .about-flex .images {
+    display: none;
+  }
+
+  .contact-us {
+    padding-bottom: 80px;
+  }
+  .contact-us .round-title {
+    align-self: baseline;
+  }
+  .contact-us .adress {
+    width: 100% !important;
+  }
+  .contact-us form {
+    width: 100% !important;
+  }
+  .contact-us .form-wrap {
+    align-items: center !important;
+  }
+  .contact-us .contact-us-info {
+    padding-left: 20px;
+    padding-top: 80px;
+  }
+  .contact-us .round-title {
+    padding-right: 0 !important;
+  }
+
+  footer .link {
+    justify-content: flex-start !important;
+  }
+}
+.next, .prev {
+  cursor: pointer;
+}
+
 .slider {
   position: relative;
   padding: 150px 0;
+}
+.slider .arrows {
+  display: flex;
+  width: 188px;
+  justify-content: space-between;
+}
+.slider .slider-title {
+  display: flex;
+  justify-content: space-between;
 }
 .slider .swiper-slide {
   width: 160px !important;
@@ -11119,22 +11311,6 @@ button {
 .slider-info p {
   margin-top: 30px;
   margin-bottom: 60px;
-}
-.slider .product-slider {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 210px;
-  width: 900px;
-}
-.slider .product-slider div {
-  height: 100%;
-}
-.slider .slick-list,
-.slider .slick-track,
-.slider .slick-slide h3,
-.slider .slick-slide .h3 {
-  height: 100%;
 }
 
 .about {
